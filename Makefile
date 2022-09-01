@@ -14,7 +14,7 @@ NAME = libft.a
 CC = gcc
 AR = ar -rc
 RM = rm -rf
-CFLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror
 INC = include
 SRCS =	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isprint.c \
 		ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
@@ -33,7 +33,7 @@ $(NAME) : $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
 $(OBJS) :
-	$(CC) $(CFLAGS) -c $(SRCS) -I $(INC)
+	$(CC) $(FLAGS) -c $(SRCS) -I $(INC)
 
 clean :
 	$(RM) $(OBJS)
