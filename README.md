@@ -10,7 +10,7 @@ implementing and learning to use them. We will create our own library.
 
 ---
 
-### ♦️ 1 . Mandatory Part
+### ♦️ . Mandatory Part
 #### Functions from <ctype.h> library
 
 - ***ft_isascii***	: test for ASCII character.
@@ -62,7 +62,7 @@ implementing and learning to use them. We will create our own library.
 - ***ft_split***	: split string, with specified character as delimiter, into an array of strings.
 - ***ft_strmapi***	: create new string from modifying string with specified function.
 
-### ♦️ 2 . Bonus Part
+### ♦️ . Bonus Part
 #### Linked list functions
 
 - ***ft_lstnew***	: create new list.
