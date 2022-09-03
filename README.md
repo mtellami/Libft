@@ -63,7 +63,7 @@ implementing and learning to use them. We will create our own library.
 - ***ft_strmapi***	: create new string from modifying string with specified function.
 
 ### 2 . Bonus Part
-####Linked list functions
+#### Linked list functions
 
 - ***ft_lstnew***	: create new list.
 - ***ft_lstsize***	: count elements of a list.
