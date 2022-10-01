@@ -6,15 +6,12 @@
 #    By: mtellami <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/28 00:34:07 by mtellami          #+#    #+#              #
-#    Updated: 2022/08/28 01:10:38 by mtellami         ###   ########.fr        #
+#    Updated: 2022/10/01 17:25:28 by mtellami         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 HEADER = libft.h
-CC = gcc
-AR = ar -rc
-RM = rm -rf
 FLAGS = -Wall -Wextra -Werror
 SRCS =	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isprint.c \
 		ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
@@ -38,18 +35,18 @@ OBJS = $(SRCS:.c=.o)
 all : $(NAME)
 
 bonus : all $(BOBJS)
-	$(AR) $(NAME) $(BOBJS)
+	ar -rc $(NAME) $(BOBJS)
 
 $(NAME) : $(OBJS)
-	$(AR) $(NAME) $(OBJS)
+	ar -rc $(NAME) $(OBJS)
 
 %.o : %.c $(HEADER)
-	$(CC) $(FLAGS) -c $< -I .
+	cc $(FLAGS) -c $<
 
 clean :
-	$(RM) $(OBJS) $(BOBJS)
+	rm -rf $(OBJS) $(BOBJS)
 
 fclean : clean
-	$(RM) $(NAME)
+	rm -rf $(NAME)
 
 re : fclean all
