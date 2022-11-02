@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mtellami <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mtellami <mtellami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/27 20:27:37 by mtellami          #+#    #+#             */
-/*   Updated: 2022/09/03 14:49:52 by mtellami         ###   ########.fr       */
+/*   Created: 2022/10/06 19:35:11 by mtellami          #+#    #+#             */
+/*   Updated: 2022/10/11 18:17:05 by mtellami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ char	*ft_itoa(int n)
 	}
 	while (nbr > 0)
 	{
-		str[i--] = 48 + (nbr % 10);
+		str[i--] = (nbr % 10) + 48;
 		nbr /= 10;
 	}
 	return (str);

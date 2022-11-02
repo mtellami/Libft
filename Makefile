@@ -1,17 +1,4 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: mtellami <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/08/28 00:34:07 by mtellami          #+#    #+#              #
-#    Updated: 2022/10/01 17:25:28 by mtellami         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME = libft.a
-HEADER = libft.h
 FLAGS = -Wall -Wextra -Werror
 SRCS =	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isprint.c \
 		ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
@@ -22,15 +9,13 @@ SRCS =	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isprint.c \
 		ft_strlcat.c ft_strnstr.c ft_calloc.c ft_putendl_fd.c \
 		ft_itoa.c ft_split.c  ft_strmapi.c ft_striteri.c \
 
-BSRCS = ft_lstnew.c ft_lstadd_front.c ft_lstlast.c \
-	ft_lstdelone.c ft_lstclear.c ft_lstsize.c \
-	ft_lstadd_back.c ft_lstiter.c ft_lstmap.c \
+BSRCS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstlast_bonus.c \
+	ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstsize_bonus.c \
+	ft_lstadd_back_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c \
 
 BOBJS = $(BSRCS:.c=.o)
 
 OBJS = $(SRCS:.c=.o)
-
-.PHONY: all bonus clean fclean re
 
 all : $(NAME)
 
@@ -40,7 +25,7 @@ bonus : all $(BOBJS)
 $(NAME) : $(OBJS)
 	ar -rc $(NAME) $(OBJS)
 
-%.o : %.c $(HEADER)
+%.o : %.c
 	cc $(FLAGS) -c $<
 
 clean :
