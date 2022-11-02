@@ -21,17 +21,6 @@ implementing and learning to use them. We will create our own library.
 - ***ft_tolower***	: upper case to lower case letter conversion.
 - ***ft_toupper***	: lower case to upper case letter conversion.
 
-#### Functions from <strings.h> library
-
-- ***ft_bzero***	: write zeroes to a byte string.
-- ***ft_memset***	: write a byte to a byte string.
-- ***ft_memchr***	: locate byte in byte string.
-- ***ft_memcmp***	: compare byte string.
-- ***ft_memmove***	: copy byte string.
-- ***ft_memcpy***	: copy memory area.
-- ***ft_memccpy***	: copy string until character found.
-
-
 #### Functions from <stdlib.h> library
 
 - ***ft_atoi***	: convert ASCII string to integer.
@@ -48,6 +37,13 @@ implementing and learning to use them. We will create our own library.
 - ***ft_strdup***	: save a copy of a string (with malloc).
 - ***ft_strlcpy***	: size-bounded string copying.
 - ***ft_strlcat***	: size-bounded string concatenation.
+- ***ft_bzero***	: write zeroes to a byte string.
+- ***ft_memset***	: write a byte to a byte string.
+- ***ft_memchr***	: locate byte in byte string.
+- ***ft_memcmp***	: compare byte string.
+- ***ft_memmove***	: copy byte string.
+- ***ft_memcpy***	: copy memory area.
+- ***ft_memccpy***	: copy string until character found.
 
 #### Non-standard functions
 
