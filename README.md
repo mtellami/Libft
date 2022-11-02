@@ -11,7 +11,7 @@ implementing and learning to use them. We will create our own library.
 ---
 
 ### ♦️ . Mandatory Part
-#### Functions from <ctype.h> library
+#### Functions from <ctype.h>
 
 - ***ft_isascii***	: test for ASCII character.
 - ***ft_isalnum***	: alphanumeric character test.
@@ -21,12 +21,12 @@ implementing and learning to use them. We will create our own library.
 - ***ft_tolower***	: upper case to lower case letter conversion.
 - ***ft_toupper***	: lower case to upper case letter conversion.
 
-#### Functions from <stdlib.h> library
+#### Functions from <stdlib.h>
 
 - ***ft_atoi***	: convert ASCII string to integer.
 - ***ft_calloc***	: memory allocation.
 
-#### Functions from <string.h> library
+#### Functions from <string.h>
 
 - ***ft_strlen***	: find length of string.
 - ***ft_strchr***	: locate character in string (first occurrence).
