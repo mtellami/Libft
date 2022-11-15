@@ -43,7 +43,6 @@ implementing and learning to use them. We will create our own library.
 - ***ft_memcmp***	: compare byte string.
 - ***ft_memmove***	: copy byte string.
 - ***ft_memcpy***	: copy memory area.
-- ***ft_memccpy***	: copy string until character found.
 
 #### Non-standard functions
 
